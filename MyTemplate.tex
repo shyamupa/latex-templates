@@ -8,14 +8,21 @@
 \usepackage[]{mathrsfs}
 \usepackage[top=1in, bottom=1in, left=0.8in, right=0.8in]{geometry}
 \usepackage[makeroom]{cancel}
+\usepackage{comment}            % for orgtbl mode
+\usepackage[ruled,linesnumbered,vlined]{algorithm2e} 
+\SetNlSty{textbf}{}{:}          % nothing before the number, but append a ':' after it
+
+
+\usepackage{graphicx}
+\usepackage{float}              % for fixing image position
 \DeclareMathOperator{\R}{\mathscr{R}}
 \renewcommand{\H}{\mathscr{H}} % Hilbert Spaces
 \DeclareMathOperator{\F}{\mathscr{F}}
 \DeclareMathOperator{\E}{\mathbb{E}} % Expectation
 \renewcommand{\Pr}{\mathbb{P}} % Probability
 \newcommand{\DotProd}[2]{\langle {#1} , {#2} \rangle} % Dot Product
-\newcommand{\etal}{\emph{et~al.}} % et. al
-\newcommand{\ie}{\emph{i.e.}} % i.e.
+\newcommand{\etal}{et~al.} % et. al
+\newcommand{\ie}{i.e.} % i.e.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \title{}
