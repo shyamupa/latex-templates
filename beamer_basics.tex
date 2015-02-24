@@ -1,6 +1,11 @@
 \documentclass{beamer}
+\usetheme{Boadilla}
+\usecolortheme{dolphin}
 \usepackage{amsmath}
 \usepackage{cancel}
+
+
+\newtheorem*{remark}{Remark}
 
 \begin{document}
 
@@ -14,13 +19,13 @@
 \begin{frame}{replacing content}
   \begin{overprint}
     \onslide<1>
-    \begin{multline*}
+    \begin{align*}
       S = A + B
-    \end{multline*}
+    \end{align*}
     \onslide<2>
-    \begin{multline*}
+    \begin{align*}
       S = A + B'
-    \end{multline*}
+    \end{align*}
   \end{overprint}
 
 \begin{itemize}[<+->]
@@ -56,7 +61,31 @@
   \end{itemize}
   \begin{equation*} y = 2x + \onslide<2->{3} \end{equation*}
   \begin{align*} y = 2x + \onslide<2->{3} \end{align*}
+  
 \end{frame}
 
 \againframe<4>{framelabel}
+
+\begin{frame}
+    \begin{block}{Block Title}
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  \end{block}
+  \begin{alertblock}{Block Title}
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  \end{alertblock}
+  \begin{example}
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  \end{example}
+\end{frame}
+
+
+\begin{frame}
+  \begin{theorem}[about beamer]
+    Beamer rocks!
+  \end{theorem}
+  \begin{remark}[Some important remark]
+    Some text
+  \end{remark}
+\end{frame}
+
 \end{document}
