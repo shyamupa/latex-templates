@@ -1,6 +1,41 @@
 \documentclass{beamer}
+\usepackage{amsmath}
+\usepackage{cancel}
 
 \begin{document}
+
+\begin{frame}
+  \frametitle{What Are Prime Numbers?}
+  \begin{definition}
+    A \alert{prime number} is a number that has exactly two divisors.
+  \end{definition}
+\end{frame}
+
+\begin{frame}{replacing content}
+  \begin{overprint}
+    \onslide<1>
+    \begin{multline*}
+      S = A + B
+    \end{multline*}
+    \onslide<2>
+    \begin{multline*}
+      S = A + B'
+    \end{multline*}
+  \end{overprint}
+
+\begin{itemize}[<+->]
+\item A
+\item B
+\end{itemize}
+
+\begin{itemize}[<+-|alert@+>]
+\item A
+\item B
+\end{itemize}
+
+\end{frame}
+
+
 \begin{frame}<1-3>[label=framelabel]{Taking Detours}
   \begin{itemize}
   \item A
@@ -19,6 +54,8 @@
   \begin{itemize}
   \item \only<1>{Problem: Here is a problem.}\visible<2>{Solution: Here is a solution.}
   \end{itemize}
+  \begin{equation*} y = 2x + \onslide<2->{3} \end{equation*}
+  \begin{align*} y = 2x + \onslide<2->{3} \end{align*}
 \end{frame}
 
 \againframe<4>{framelabel}
