@@ -1,0 +1,25 @@
+\documentclass{beamer}
+
+\begin{document}
+\begin{frame}<1-3>[label=framelabel]{Taking Detours}
+  \begin{itemize}
+  \item A
+    \pause
+  \item B
+    \pause
+  \item\alert<4->{Something important.
+  }
+  \end{itemize}
+\end{frame}
+
+\
+
+\begin{frame}
+  Transition text
+  \begin{itemize}
+  \item \only<1>{Problem: Here is a problem.}\visible<2>{Solution: Here is a solution.}
+  \end{itemize}
+\end{frame}
+
+\againframe<4>{framelabel}
+\end{document}
