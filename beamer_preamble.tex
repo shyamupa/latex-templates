@@ -13,53 +13,22 @@
 \usepackage{algpseudocode} % uses algorithmicx package automatically
 \usepackage{mathrsfs}
 \usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{subcaption}
+
 \usepackage{tikz}
 \usepackage{etex}
 \usetikzlibrary{calc}
 \usetikzlibrary{shapes.geometric}
 \usepackage{pgfplots}
-\usepackage{subcaption}
 \usepackage{tikz-qtree}
 \usepackage{tikz-dependency}
 \tikzstyle{vertex}=[draw,fill=black!15,circle,minimum size=10pt,inner sep=1pt]
 
 
-\DeclareMathOperator*{\argmin}{{arg\,min}}
-\DeclareMathOperator*{\argmax}{{arg\,max}}
-\DeclareMathOperator{\F}{\mathcal{F}} % Function Classes
-\DeclareMathOperator{\FF}{\mathcal{F}} % prettier function classes
-\DeclareMathOperator{\Hs}{\mathscr{H}} % Hilbert Spaces
-\DeclareMathOperator{\R}{\mathbb{R}} % Reals
-\DeclareMathOperator{\Rad}{\mathcal{R}} % Rademacher
-\DeclareMathOperator{\E}{\mathbb{E}} % Expectation
-\DeclareMathOperator{\Or}{\mathcal{O}} % Order Notation
-\DeclareMathOperator{\Tr}{\textbf{Tr}} % Expectation
-\DeclareMathOperator{\grad}{\nabla} % Gradient
-\DeclareMathOperator{\LLH}{\mathcal{L}} % Log Likelihood etc.
-\DeclareMathOperator{\Lag}{\mathcal{L}} % Lagrangian etc.
-\DeclareMathOperator{\X}{\mathcal{X}} % input space X
-\DeclareMathOperator{\Y}{\mathcal{Y}} % output space Y
-\DeclareMathOperator{\bF}{\mathbf{F}} 
-\DeclareMathOperator{\w}{\mathbf{w}} % weight vector
-\DeclareMathOperator{\y}{\mathbf{y}} % output structure
-\DeclareMathOperator{\x}{\mathbf{x}} % input structure
-\DeclareMathOperator{\f}{\mathbf{f}} % function
-\DeclareMathOperator{\K}{\mathcal{K}} % set of Kernels
-\DeclareMathOperator{\vw}{\overrightarrow{w}} % vector w
-\DeclareMathOperator{\T}{\mathcal{T}} % # of training eg.
+
 
 \newcommand{\highlightchunk}[2]{{ \color{#1} [ } #2 { \color{#1} ] }}
-
-\newcommand{\opt}[1]{{#1}^{*}} % give f* for Optimal, Dual ...
-\newcommand{\pred}[1]{\hat{#1}} % Prediction 
-\newcommand{\dotprod}[2]{ \langle {#1} , {#2} \rangle } % <w,x> style
-\renewcommand{\Pr}{\mathbb{P}} % Probability
-\renewcommand{\vec}[1]{\mathbf{#1}} % vectors
-
-\newcommand*{\Let}[2]{\State {#1} $\gets$ {#2}}
-\newcommand{\Forall}{\,\forall\,} % for all with spacing
-\usepackage{xcolor}
-
 \newcommand{\highlight}[1]{\colorbox{yellow}{$\displaystyle #1$}}
 \newcommand{\highlightmath}[1]{\colorbox{yellow}{\[\displaystyle #1\]}}
 \setbeamertemplate{footline}[frame number]

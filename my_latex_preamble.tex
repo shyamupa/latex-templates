@@ -1,0 +1,104 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath,mathtools}
+\usepackage[top=1in, bottom=1in, left=0.8in, right=0.8in]{geometry}
+\usepackage[makeroom]{cancel}
+\usepackage{algorithm}
+\usepackage{algpseudocode} % uses algorithmicx package automatically
+\usepackage{eqparbox}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\hypersetup{colorlinks=true,linkcolor=red,citecolor=green}
+\DeclareMathOperator*{\argmin}{\mathbf{arg\,min}}
+\DeclareMathOperator*{\argmax}{\mathbf{arg\,max}}
+\DeclareMathOperator*{\sup}{sup}
+\DeclareMathOperator{\F}{\mathscr{F}} % Function Classes
+\DeclareMathOperator{\H}{\mathscr{H}} % Hilbert Spaces
+\DeclareMathOperator{\R}{\mathbb{R}} % Reals
+\DeclareMathOperator{\E}{\mathbb{E}} % Expectation
+\DeclareMathOperator{\Or}{\mathcal{O}} % Order Notation
+\DeclareMathOperator{\Tr}{\textbf{Tr}} % Expectation
+\DeclareMathOperator{\grad}{\nabla} % Gradient
+\DeclareMathOperator{\LLH}{\mathcal{L}} % Log Likelihood etc.
+\DeclareMathOperator{\Lag}{\mathcal{L}} % Lagrangian etc.
+\DeclareMathOperator{\X}{\mathcal{X}} % input space X
+\DeclareMathOperator{\Y}{\mathcal{Y}} % output space Y
+\DeclareMathOperator{\bF}{\mathbf{F}}
+\DeclareMathOperator{\w}{\mathbf{w}} % weight vector
+\DeclareMathOperator{\y}{\mathbf{y}} % output structure
+\DeclareMathOperator{\x}{\mathbf{x}} % input structure
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\newcommand{\opt}[1]{{#1}^{*}} % Optimal
+\newcommand{\pred}[1]{\hat{#1}} % Prediction
+\newcommand{\dnorm}[1]{{#1}^{*}} % Dual Norm
+\newcommand{\dotprod}[2]{ {#1}^T{#2}} % w^Tx style
+\newcommand{\dotproduct}[2]{ \langle {#1},{#2} \rangle } % <w,x> style
+\newcommand{\Forall}{\,\forall\,} % for all with spacing
+\newcommand*{\Let}[2]{\State {#1} $\gets$ {#2}}
+\renewcommand{\Pr}{\mathbb{P}} % Probability
+\renewcommand{\vec}[1]{\mathbf{#1}} % vectors
+\renewcommand{\ceiling}[1]{\lceil {#1} \rceil} % vectors
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\renewcommand{\algorithmiccomment}[1]{\hfill$\triangleleft$\ \eqparbox{COMMENT}{#1}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+
+\DeclareMathOperator*{\argmin}{{arg\,min}}
+\DeclareMathOperator*{\argmax}{{arg\,max}}
+\DeclareMathOperator{\F}{\mathcal{F}} % Function Classes
+\DeclareMathOperator{\FF}{\mathcal{F}} % prettier function classes
+\DeclareMathOperator{\Hs}{\mathscr{H}} % Hilbert Spaces
+\DeclareMathOperator{\R}{\mathbb{R}} % Reals
+\DeclareMathOperator{\Rad}{\mathcal{R}} % Rademacher
+\DeclareMathOperator{\E}{\mathbb{E}} % Expectation
+\DeclareMathOperator{\Or}{\mathcal{O}} % Order Notation
+\DeclareMathOperator{\Tr}{\textbf{Tr}} % Expectation
+\DeclareMathOperator{\grad}{\nabla} % Gradient
+\DeclareMathOperator{\LLH}{\mathcal{L}} % Log Likelihood etc.
+\DeclareMathOperator{\Lag}{\mathcal{L}} % Lagrangian etc.
+\DeclareMathOperator{\X}{\mathcal{X}} % input space X
+\DeclareMathOperator{\Y}{\mathcal{Y}} % output space Y
+\DeclareMathOperator{\bF}{\mathbf{F}} 
+\DeclareMathOperator{\w}{\mathbf{w}} % weight vector
+\DeclareMathOperator{\y}{\mathbf{y}} % output structure
+\DeclareMathOperator{\x}{\mathbf{x}} % input structure
+\DeclareMathOperator{\f}{\mathbf{f}} % function
+\DeclareMathOperator{\K}{\mathcal{K}} % set of Kernels
+\DeclareMathOperator{\vw}{\overrightarrow{w}} % vector w
+\DeclareMathOperator{\T}{\mathcal{T}} % # of training eg.
+
+
+\newcommand{\opt}[1]{{#1}^{*}} % give f* for Optimal, Dual ...
+\newcommand{\pred}[1]{\hat{#1}} % Prediction 
+\newcommand{\dotprod}[2]{ \langle {#1} , {#2} \rangle } % <w,x> style
+\renewcommand{\Pr}{\mathbb{P}} % Probability
+\renewcommand{\vec}[1]{\mathbf{#1}} % vectors
+
+\newcommand*{\Let}[2]{\State {#1} $\gets$ {#2}}
+\newcommand{\Forall}{\,\forall\,} % for all with spacing
