@@ -1,35 +1,33 @@
 \documentclass[a4paper]{article}
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{fixltx2e}
 \usepackage{graphicx}
 \usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
 \usepackage{float}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
-\usepackage{amsmath}
 \usepackage{textcomp}
 \usepackage{marvosym}
 \usepackage{wasysym}
-\usepackage{amssymb}
 \usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=red,citecolor=green}
 \tolerance=1000
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[english]{babel}
-\usepackage{amsfonts}
-\usepackage{mathrsfs}
-\usepackage{amsmath,mathtools}
 \usepackage[top=1in, bottom=1in, left=0.8in, right=0.8in]{geometry}
 \usepackage[makeroom]{cancel}
 \usepackage{algorithm}
 \usepackage{algpseudocode} % uses algorithmicx package automatically
 \usepackage{eqparbox}
-\usepackage{hyperref}
 \usepackage{pgfplots}
-\hypersetup{colorlinks=true,linkcolor=red,citecolor=green}
+
 \DeclareMathOperator*{\argmin}{\mathbf{arg\,min}}
 \DeclareMathOperator*{\argmax}{\mathbf{arg\,max}}
 \DeclareMathOperator*{\sup}{sup}
@@ -59,7 +57,7 @@
 \newcommand*{\Let}[2]{\State {#1} $\gets$ {#2}}
 \renewcommand{\Pr}{\mathbb{P}} % Probability
 \renewcommand{\vec}[1]{\mathbf{#1}} % vectors
-\renewcommand{\ceiling}[1]{\lceil {#1} \rceil} % vectors
+\newcommand{\ceiling}[1]{\lceil {#1} \rceil} % vectors
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
 \renewcommand{\algorithmicensure}{\textbf{Output:}}
 \renewcommand{\algorithmiccomment}[1]{\hfill$\triangleleft$\ \eqparbox{COMMENT}{#1}}
@@ -94,11 +92,3 @@
 \DeclareMathOperator{\T}{\mathcal{T}} % # of training eg.
 
 
-\newcommand{\opt}[1]{{#1}^{*}} % give f* for Optimal, Dual ...
-\newcommand{\pred}[1]{\hat{#1}} % Prediction 
-\newcommand{\dotprod}[2]{ \langle {#1} , {#2} \rangle } % <w,x> style
-\renewcommand{\Pr}{\mathbb{P}} % Probability
-\renewcommand{\vec}[1]{\mathbf{#1}} % vectors
-
-\newcommand*{\Let}[2]{\State {#1} $\gets$ {#2}}
-\newcommand{\Forall}{\,\forall\,} % for all with spacing
